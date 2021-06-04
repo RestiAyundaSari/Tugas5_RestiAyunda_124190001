@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/nama_desa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desa "
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/nama_kecamatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kecamatan"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/nama_desa"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/nama_kabupaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kabupaten"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/nama_kecamatan"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/jml_RT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RT"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/nama_kabupaten"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/jml_warga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warga"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/jml_RT"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/jml_bangunan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangun"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/jml_warga"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID "
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/jml_bangunan"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/lihat_desa"
+            android:layout_marginBottom="4dp"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_desa"
+            android:text="Desa  "
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/lihat_kecamatan"
+            android:layout_marginBottom="4dp"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_desa"
+            android:text="Kecamatan"
+            android:layout_toRightOf="@id/lihat_desa"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/lihat_kabupaten"
+            android:layout_marginBottom="4dp"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_desa"
+            android:text="Kabupaten"
+            android:layout_toRightOf="@id/lihat_kecamatan"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/lihat_RT"
+            android:layout_marginBottom="4dp"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_desa"
+            android:text= "RT"
+            android:layout_toRightOf="@id/lihat_kabupaten"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/lihat_warga"
+            android:layout_marginBottom="4dp"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_desa"
+            android:text="Warga"
+            android:layout_toRightOf="@id/lihat_RT"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/lihat_bangunan"
+            android:layout_marginBottom="4dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_desa"
+            android:text="Bangun"
+            android:layout_toRightOf="@id/lihat_warga"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/lihat_Id"
+            android:layout_marginBottom="4dp"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_desa"
+            android:text="ID "
+            android:layout_toRightOf="@id/lihat_bangunan"
+            android:padding="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@color/purple_200"
+                android:layout_marginLeft="170dp"
+                android:text="Hapus"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@id/btn_hapus"
+                android:background="@color/purple_200"
+                android:text="Edit"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

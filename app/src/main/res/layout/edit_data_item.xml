@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDataDesa"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT DATA "
+            android:id="@+id/judul1"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" SURVEY DESA"
+            android:id="@+id/judul2"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textAlignment="center"
+            android:layout_below="@id/judul1"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/tv_nama_desa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Desa           : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_below="@id/judul2" />
+
+        <TextView
+            android:id="@+id/tv_kecamatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Kecamatan Desa : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_nama_desa"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_kabupaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Kabupaten Desa  : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_kecamatan"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_jml_RT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Jumlah RT            : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_kabupaten"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_jml_warga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Jumlah Warga      : "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_jml_RT"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tv_jml_bangunan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Jumlah Bangunan:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/et_jml_warga"
+            android:padding="5dp"/>
+
+        <EditText
+            android:layout_marginTop="50dp"
+            android:id="@+id/et_nama_desa"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_below="@id/judul2"
+            android:hint="Nama Desa"
+            android:layout_toRightOf="@id/tv_nama_desa"
+            />
+        <EditText
+            android:id="@+id/et_kecamatan"
+            android:layout_below="@id/et_nama_desa"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tv_kecamatan"
+            android:hint="Nama Kecamatan Desa"
+            />
+
+        <EditText
+            android:id="@+id/et_kabupaten"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_kecamatan"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tv_kabupaten"
+            android:hint="Nama Kabupaten Desa" />
+
+        <EditText
+            android:id="@+id/et_jml_RT"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_kabupaten"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tv_jml_RT"
+            android:hint="Jumlah RT" />
+
+        <EditText
+            android:id="@+id/et_jml_warga"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_jml_RT"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tv_jml_warga"
+            android:hint="Jumlah Warga" />
+
+        <EditText
+            android:id="@+id/et_jml_bangunan"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_jml_warga"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tv_jml_bangunan"
+            android:hint="Jumlah Bangunan" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Data"
+            android:layout_below="@id/et_jml_bangunan"
+            android:background="@color/purple_200"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="50dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
